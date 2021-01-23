@@ -1,0 +1,21 @@
+.container {
+  color: rgb(255, 255, 255);
+  background-color: rgb(35, 122, 252);
+  padding: 1em 1.8em;
+  width: 100%;
+  font-family: Helvetica,Calibri,Arial,sans-serif;
+}
+.footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+}
+.button {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border-color: rgb(255, 255, 255);
+  padding: 5px 40px;
+  margin-right: 50px;
+  cursor: pointer;
+  float:right;
+}

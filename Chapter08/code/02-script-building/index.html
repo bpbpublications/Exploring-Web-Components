@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Using the Alert Cookie component</title>
+    <script src="./alert-cookie.js"></script>
+    <script>
+      window.onload= function() {
+        //You cannot create an instance of CookieAlert class
+        var myCookieAlert = new CookieAlert();
+
+        //You cannot access global variables and constants
+        console.log(template);
+
+        //You cannot access global functions
+        console.log(getCookie("myCookie"));
+      }
+    </script>
+  </head>
+  <body class="container">
+    <h1>Using the Alert Cookie component</h1>
+    <cookie-alert>
+      <span slot="message">We use <b>cookies</b>, but respect your <b>privacy</b>!</span>
+      <span slot="reference">Read our <a href="privacy.html">privacy policy</a></span>
+    </cookie-alert>
+  </body>
+</html>

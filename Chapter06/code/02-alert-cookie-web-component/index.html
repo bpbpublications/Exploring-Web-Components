@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Components with Webpack Starter Kit</title>
+    <script src="./wc-polyfills/webcomponents-loader.js"></script>
+    <script src="./bundle.js"></script>
+    <style>
+      button {
+        border-style: dotted;
+        background-color: red !important;
+      }
+      .container {
+        background-color: gray;
+      }
+    </style>
+    <script>
+      window.addEventListener("load", ()=>{
+        let buttons = document.querySelectorAll("button");
+        buttons.forEach((btn)=>{
+          btn.disabled = true;
+        });
+      });
+    </script>
+  </head>
+  <body class="container">
+    <h1>Here is your Web Component</h1>
+    <button>Click here!</button>
+    <cookie-alert message="We use cookies, but respect your privacy!"></cookie-alert>
+  </body>
+</html>

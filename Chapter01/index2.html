@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://andychiare.github.io/cdn/rating-component/myRating.js"></script>
+    <script>
+    window.onload = function() {
+      const myRating = document.getElementById("myRatingComponent")
+
+      myRating.maxValue = 10;
+      myRating.value = 2;
+
+      myRating.addEventListener("click", () => {
+        alert("Thanks for your feedback!");  
+      });
+    };
+    </script>
+  </head>
+  <body>
+    <my-rating id="myRatingComponent"></my-rating>
+  </body>
+</html>

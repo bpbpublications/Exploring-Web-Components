@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Using the Alert Cookie component</title>
+    <script type="module" src="./cookie-alert.js"></script>
+    <script type="module">
+      import CookieAlert from './cookie-alert.js'
+
+      window.onload= function() {
+        //You can create an instance of CookieAlert class
+        var myCookieAlert = new new CookieAlert();
+
+        //You cannot access private variables and constants
+        console.log(template);
+
+        //You cannot access private functions
+        console.log(getCookie("myCookie"));
+      }
+    </script>
+  </head>
+  <body class="container">
+    <h1>Using the Cookie Alert component</h1>
+    <cookie-alert>
+      <span slot="message">We use <b>cookies</b>, but respect your <b>privacy</b>!</span>
+      <span slot="reference">Read our <a href="privacy.html">privacy policy</a></span>
+    </cookie-alert>
+  </body>
+</html>

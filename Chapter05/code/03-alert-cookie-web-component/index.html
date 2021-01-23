@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Components with Webpack Starter Kit</title>
+    <script src="./wc-polyfills/webcomponents-loader.js"></script>
+    <script src="./bundle.js"></script>
+    <script>
+      window.onload = function() {
+        const cookieAlert = document.querySelector("cookie-alert");
+
+        cookieAlert.addEventListener("accepted", (event) => 
+        alert(`Thanks for accepting our cookie policy.\nYou need to confirm again in ${event.detail.acceptedCookieExpiration} days.`));
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Here is your Web Component</h1>
+    <cookie-alert message="We use cookies, but respect your privacy!"></cookie-alert>
+  </body>
+</html>

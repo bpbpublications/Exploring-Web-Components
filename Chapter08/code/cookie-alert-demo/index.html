@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Components with Webpack Starter Kit</title>
+    <script src="./wc-polyfills/webcomponents-loader.js"></script>
+    <script src="./bundle.js"></script>
+  </head>
+  <body class="container">
+    <h1>Here is your Web Component</h1>
+    <cookie-alert>
+      <span slot="message">We use <b>cookies</b>, but respect your <b>privacy</b>!</span>
+      <span slot="reference">Read our <a href="privacy.html">privacy policy</a></span>
+    </cookie-alert>
+  </body>
+</html>
